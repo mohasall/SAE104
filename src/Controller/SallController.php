@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class SallController extends AbstractController
 {
-    #[Route('/sall', name: 'app_sall')]
+    #[Route('/', name: 'app_sall')]
     public function index(): Response
     {
         return $this->render('sall/index.html.twig', [
@@ -16,8 +16,25 @@ class SallController extends AbstractController
         ]);
     
     }
-    #[Route('/Sall', name: 'app_Sall')]
-    Public function home(){
-    return $this->render('Sall/home.html.twig');
+
+
+    #[Route('/CV', name: 'app_sall1')]
+    public function CV(): Response
+    {
+        return $this->render('sall/CV.html.twig', [
+            'controller_name' => 'SallController',
+        ]);
+    
     }
+    
+    #[Route('/PORTFOLIO', name: 'app_sall2')]
+    public function PORTFOLIO(): Response
+    {
+        return $this->render('sall/PORTFOLIO.html.twig', [
+            'controller_name' => 'SallController',
+        ]);
+    
+    }
+   
+    
 }
