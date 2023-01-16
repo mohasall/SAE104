@@ -35,6 +35,14 @@ class SallController extends AbstractController
         ]);
     
     }
+    #[Route('/SKILLS', name: 'app_sall3')]
+    public function SKILLS(): Response
+    {
+        return $this->render('sall/SKILLS.html.twig', [
+            'controller_name' => 'SallController',
+        ]);
+    
+    }
    
     
 }
