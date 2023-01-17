@@ -100,8 +100,32 @@
             width: 20vh; 
             height: 20vh;
             clip-path: circle(50% at 50% 50%);
+
+            
+      
+            }
+            .image{
+              width: 100%;
+              height :auto ;
+            }
            
            
 
-          }
           
+          .card header{
+            background-color: black;
+
+          }
+
+
+          .centrertitre{
+            text-align: center;
+            color: #fff;
+            font-size: 2em;
+          }
+          .card-header{
+            color:black
+
+          }
+
+         
