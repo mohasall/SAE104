@@ -26,6 +26,7 @@ class SallController extends AbstractController
         ]);
     
     }
+
     
     #[Route('/PORTFOLIO', name: 'app_sall2')]
     public function PORTFOLIO(): Response
@@ -35,14 +36,15 @@ class SallController extends AbstractController
         ]);
     
     }
-    #[Route('/SKILLS', name: 'app_sall3')]
-    public function SKILLS(): Response
+    #[Route('/HOBBIES', name: 'app_sall3')]
+    public function HOBBIES(): Response
     {
-        return $this->render('sall/SKILLS.html.twig', [
+        return $this->render('sall/HOBBIES.html.twig', [
             'controller_name' => 'SallController',
         ]);
     
     }
+ 
    
     
 }
